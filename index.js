@@ -16,6 +16,7 @@ express()
          field("tenant_address").required()
        ),
        function(req, res) {
+         console.log("complete body response:", req.body);
          console.log("complete form:", req.form);
          if (!req.form.isValid) {
            console.log(req.form.errors);
