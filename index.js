@@ -12,8 +12,8 @@ express()
   .get('/', (req, res) => res.render('pages/index'))
   .post('/generate',
        form(
-         field("tenant_name").trim().required().is(/^[a-z]+$/),
-         field("tenant_address").trim().required().is(/^[a-z]+$/)
+         field("tenant_name").required(),
+         field("tenant_address").required()
        ),
        function(req, res) {
          console.log("complete form:", req.form);
