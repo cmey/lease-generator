@@ -16,6 +16,7 @@ express()
          field("tenant_address").trim().required().is(/^[a-z]+$/)
        ),
        function(req, res) {
+         console.log("complete form:", req.form);
          if (!req.form.isValid) {
            console.log(req.form.errors);
          } else {
