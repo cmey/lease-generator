@@ -14,7 +14,12 @@ express()
   .post('/generate',
        form(
          field("tenant_name").required(),
-         field("tenant_address").required()
+         field("tenant_address").required(),
+         field("cotenant_name"),
+         field("cotenant_address"),
+         field("caution_name"),
+         field("caution_address"),
+         field("rent_amount").required()
        ),
        function(req, res) {
          console.log("complete body response:", req.body);
@@ -25,7 +30,7 @@ express()
            console.log("tenant_name:", req.form.tenant_name);
            console.log("tenant_address:", req.form.tenant_address);
 
-           res.render('pages/lease.ejs')
+           res.render('pages/lease.ejs', req.form)
          }
        }
   )
