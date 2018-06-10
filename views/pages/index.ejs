@@ -15,15 +15,23 @@
     <p>Enter the tenant name and this will generate the lease contract!</p>
 
     <form method="post" action="/generate">
+      <select name="unit">
+          <option value="maison_neufgrange">Maison Hambach rue de Neufgrange
+          <option value="appart_a_neufgrange">Appart A Hambach rue de Neufgrange
+          <option value="appart_b_neufgrange">Appart B Hambach rue de Neufgrange
+          <option value="appart_strasbourg">Appart Strasbourg
+          <option value="appart_oriels_nancy">Appart Oriels Nancy
+          <option value="appart_4RCN_nancy">Appart 4 rue Charles Nicole Nancy
+      </select>
+      <p> <label for="rent_amount">*Montant du loyer</label> : <input type="text" name="rent_amount" id="rent_amount" /> </p>
       <p> <label for="tenant_name">*Nom prénom locataire</label> : <input type="text" name="tenant_name" id="tenant_name" /> </p>
       <p> <label for="tenant_address">*Adresse locataire</label> : <input type="text" name="tenant_address" id="tenant_address" /> </p>
       <p> <label for="cotenant_name">Nom prénom colocataire</label> : <input type="text" name="cotenant_name" id="cotenant_name" /> </p>
       <p> <label for="cotenant_address">Adresse colocataire</label> : <input type="text" name="cotenant_address" id="cotenant_address" /> </p>
       <p> <label for="caution_name">Nom prénom caution</label> : <input type="text" name="caution_name" id="caution_name" /> </p>
       <p> <label for="caution_address">Adresse caution</label> : <input type="text" name="caution_address" id="caution_address" /> </p>
-      <p> <label for="rent_amount">*Montant du loyer</label> : <input type="text" name="rent_amount" id="rent_amount" /> </p>
 
-   <input type="submit" class="btn btn-lg btn-primary" value="Envoyer" />
+      <input type="submit" class="btn btn-lg btn-primary" value="Envoyer" />
    </form>
 
   </div>
