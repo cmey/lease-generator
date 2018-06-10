@@ -14,6 +14,7 @@ express()
   .post('/generate',
        form(
          field("unit").required(),
+         field("start_date").required(),
          field("rent_amount").required(),
          field("tenant_name").required(),
          field("tenant_address").required(),
