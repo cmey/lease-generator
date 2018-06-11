@@ -9,7 +9,7 @@
 <div class="jumbotron text-center">
   <div class="container" align="justify">
 
-<h2>CONTRAT DE LOCATION DE LOGEMENT À USAGE D'HABITATION PRINCIPALE
+<h2 align="center">CONTRAT DE LOCATION DE LOGEMENT À USAGE D'HABITATION PRINCIPALE
         <% switch (unit) {
             case 'maison_neufgrange' : %>
                 NON MEUBLÉ <% break;
@@ -25,7 +25,7 @@
                 MEUBLÉ <% break;
             } %>
     </h2>
-<p>Loi n° 89-462 du 6 juillet 1989 (J.O. du 8/07/89)</p>
+<p align="center">Loi n° 89-462 du 6 juillet 1989 (J.O. du 8/07/89)</p>
 
 Le présent contrat est conclu entre les soussignés:
 
@@ -262,37 +262,39 @@ Le présent bail a été établi sous seing privé le &emsp; &emsp; &emsp; &emsp
 <div class="pagebreak"> </div>
 
 <% if(caution_name) { %> 
-<h2>CAUTION SOLIDAIRE</h2>
-Je soussigné : <%= caution_name %>
-<br/>demeurant <%= caution_address %>
+<h2 align="center">CAUTION SOLIDAIRE</h2>
+<br/>
+Je soussigné : <%= caution_name %>,
+<br/>demeurant : <%= caution_address %>,
 <br/>déclare me porter caution solidaire, sans bénéfice de discussion ni de division, du règlement des loyers, charges, taxes, impôts, réparations locatives, toutes indemnités et intérêts de retard et frais éventuels de procédures dus par le LOCATAIRE :
 <%= tenant_name %>
 <br/>en vertu du bail consenti pour les locaux qu'il occupera à compter du : <%= start_date %>
 <br/>du bien situé à :
 <% switch (unit) {
     case 'maison_neufgrange' : %>
-        2 rue de Neufgrange, Hambach 57910 <% break;
+        2 rue de Neufgrange, Hambach 57910, <% break;
     case 'appart_a_neufgrange' : %>
-        2A rue de Neufgrange, Hambach 57910 <% break;
+        2A rue de Neufgrange, Hambach 57910, <% break;
     case 'appart_b_neufgrange' : %>
-        2B rue de Neufgrange, Hambach 57910 <% break;
+        2B rue de Neufgrange, Hambach 57910, <% break;
     case 'appart_strasbourg' : %>
-        TODO <% break;
+        TODO, <% break;
     case 'appart_oriels_nancy' : %>
-        5, allée du chanoine Drioton, Appartement B18, 54000 Nancy <% break;
+        5, allée du chanoine Drioton, Appartement B18, 54000 Nancy, <% break;
     case 'appart_4RCN_nancy' : %>
-        4, rue Charles Nicole, Appartement 154, 54000 Nancy <% break;
+        4, rue Charles Nicole, Appartement 154, 54000 Nancy, <% break;
     } %>
 <% } %>
-<br/>Bail que j'ai signé après en avoir pris connaissance et dont un exemplaire m'a été remis.
-<br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, locataire, en cas de défaillance de sa part, à l'égard de, Christophe Meyer, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
+<br/>bail que j'ai signé après en avoir pris connaissance et dont un exemplaire m'a été remis.
+<br/><br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, locataire, en cas de défaillance de sa part, à l'égard de, Christophe Meyer, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
 <br/><br/>Je confirme la connaissance que j'ai de la nature et de l'étendue de mes obligations en recopiant de ma main la mention ci-après : « Bon pour caution solidaire, ayant parfaitement connaissance de la nature et de l'étendue de l'obligation contractée, par moi-même qui m'engage à m'acquitter, en cas de défaillance du locataire, les sommes dus, comprenant un loyer qui s'élève à <%= rent_amount %> € par mois. »
-<br/>Mention manuscrite du soussigné :
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/>Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du 27/07), je recopie l'alinéa 1er de l'article précité reproduit ci-dessous : « Lorsque le cautionnement d'obligations résultant d'un contrat de location ne comporte aucune indication de durée ou lorsque la durée du cautionnement est stipulée indéterminée, la caution peut résilier unilatéralement. La résiliation prend effet au terme du contrat de location, qu'il s'agisse du contrat initial ou d'un contrat reconduit ou renouvelé au cours duquel le bailleur reçoit notification de la résiliation. »
-<br/>Mention manuscrite du soussigné :
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/>Pour l'exécution éventuelle de cet engagement, en cas de litige, le tribunal du lieu de la location sera seul compétent.
+<br/><br/>Mention manuscrite du soussigné :
+<div class="pagebreak"> </div>
+Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du 27/07), je recopie l'alinéa 1er de l'article précité reproduit ci-dessous :
+<br/>« Lorsque le cautionnement d'obligations résultant d'un contrat de location ne comporte aucune indication de durée ou lorsque la durée du cautionnement est stipulée indéterminée, la caution peut résilier unilatéralement. La résiliation prend effet au terme du contrat de location, qu'il s'agisse du contrat initial ou d'un contrat reconduit ou renouvelé au cours duquel le bailleur reçoit notification de la résiliation. »
+<br/><br/>Mention manuscrite du soussigné :
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/>Pour l'exécution éventuelle de cet engagement, le tribunal du lieu de la location sera seul compétent.
 <br/><br/>Fait à &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;, le &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;.
 <br/><br/>Signature de la caution, précédé de la mention « Lu et approuvé, bon pour caution »
 <br/><br/><br/><br/>Signature du bailleur, précédé de la mention « Lu et approuvé »
