@@ -29,3 +29,4 @@
     .jumbotron .lang-logo img {
       max-width: 100%; }
 
+.pagebreak { page-break-before: always; }
