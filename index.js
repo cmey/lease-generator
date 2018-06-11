@@ -1,9 +1,13 @@
 const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
+
 const bodyParser = require('body-parser')
 const form = require('express-form')
 const field = form.field;
-const path = require('path')
-const PORT = process.env.PORT || 5000
+
+var writtenNumber = require('written-number');
+writtenNumber.defaults.lang = 'fr';
 
 express()
   .use(bodyParser())
@@ -31,6 +35,7 @@ express()
          } else {
            console.log("tenant_name:", req.form.tenant_name);
            console.log("tenant_address:", req.form.tenant_address);
+           req.form.rent_amount_written = writtenNumber(req.form.rent_amount);
            res.render('pages/lease.ejs', req.form)
          }
        }
