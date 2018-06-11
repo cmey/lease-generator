@@ -30,14 +30,12 @@
 Le présent contrat est conclu entre les soussignés:
 
 <p>BAILLEUR</p>
-Monsieur Christophe MEYER,
-530 Old Whitfield St., 06437 GUILFORD, CT, USA
-christophe.meyer.pro@gmail.com / 001 203 300 3824
+<%= landlord_name %>, demeurant <%= landlord_address %>
     
 <p>LOCATAIRE(S)</p>
-<%= tenant_name %>  <%= tenant_address %>
+<%= tenant_name %>, demeurant <%= tenant_address %>
 <br/><br/>
-<%= cotenant_name %>  <%= cotenant_address %>
+<%= cotenant_name %>, demeurant <%= cotenant_address %>
 
 <p>OBJET DU CONTRAT</p>
 Le BAILLEUR loue au LOCATAIRE, qui accepte, les locaux dont la désignation suit :
@@ -286,7 +284,7 @@ Je soussigné : <%= caution_name %>,
     } %>
 <% } %>
 <br/>bail que j'ai signé après en avoir pris connaissance et dont un exemplaire m'a été remis.
-<br/><br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, locataire, en cas de défaillance de sa part, à l'égard de, Christophe Meyer, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
+<br/><br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, locataire, en cas de défaillance de sa part, à l'égard de, <%= landlord_name %>, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
 <br/><br/>Je confirme la connaissance que j'ai de la nature et de l'étendue de mes obligations en recopiant de ma main la mention ci-après : « Bon pour caution solidaire, ayant parfaitement connaissance de la nature et de l'étendue de l'obligation contractée, par moi-même qui m'engage à m'acquitter, en cas de défaillance du locataire, les sommes dus, comprenant un loyer qui s'élève à <%= rent_amount %> € par mois. »
 <br/><br/>Mention manuscrite du soussigné :
 <div class="pagebreak"> </div>

@@ -25,7 +25,9 @@ express()
          field("cotenant_name"),
          field("cotenant_address"),
          field("caution_name"),
-         field("caution_address")
+         field("caution_address"),
+         field("landlord_name").required(),
+         field("landlord_address").required()
        ),
        function(req, res) {
          console.log("complete body response:", req.body);
