@@ -1,3 +1,7 @@
+// sentry.io
+var Raven = require('raven');
+Raven.config('https://1dc065125aa542f4a77ecc56feb511b3@sentry.io/1231792').install();
+
 const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
