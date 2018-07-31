@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+  <title>Fiche information locataire</title>
+</head>
+
+<body>
+
+<div class="jumbotron text-center">
+  <div class="container" align="justify">
+
+    <h2 align="center">FICHE DʼINFORMATION LOCATAIRE</h2>
+
+    <p>
+    <% switch (unit) {
+    case 'maison_neufgrange' : %>
+        Maison individuelle type F5 150 m2, 2 rue de Neufgrange, Hambach 57910<% break;
+    case 'appart_a_neufgrange' : %>
+        Appartement type F5 139 m2, 2a rue de Neufgrange, Hambach 57910<% break;
+    case 'appart_b_neufgrange' : %>
+        Appartement type F5 139 m2, 2b rue de Neufgrange, Hambach 57910<% break;
+    case 'appart_strasbourg' : %>
+        Appartement F2 60m2, sis TODO<% break;
+    case 'appart_oriels_nancy' : %>
+        F2 meublé 65m2, parking sous-sol, 5 allée du chanoine Drioton, 54000 Nancy<% break;
+    case 'appart_4RCN_nancy' : %>
+        F2 meublé 47m2, dernier étage, parking sous-sol, 4 rue Charles Nicole, 54000 Nancy<% break;
+    } %>
+    <br/>
+    <%= rent_amount %> € / mois
+    </p>
+    <p>Nom et Prénom :</p>
+    <p>Téléphone :</p>
+    <p>E-mail :</p>
+    <p>Date de naissance :</p>
+    <p>Adresse actuelle :</p>
+    <p>Profession :</p>
+    <p>Employeur :</p>
+    <p>Type de contrat (CDD, CDI, ...) :</p>
+    <p>Montant du salaire :</p>
+    <p>Loyer payé actuellement :</p>
+    <p>Téléphone du bailleur actuel :</p>
+    <p>Garant (nécessaire si salaire / 3 < loyer) :</p>
+    <p>Durée de location prévue :</p>
+    <p>Merci de joindre à cette fiche :
+    <br/> - une copie du dernier avis d’impôt sur le revenu ;
+    <br/> - les trois derniers bulletins de salaire ;
+    <br/> - plus ceux des garants si applicable.
+    </p>
+    <p><%= landlord_name %> - <%= landlord_email %> - <%= landlord_phone %></p>
+
+  </div>
+</div>
+
+</body>
+</html>

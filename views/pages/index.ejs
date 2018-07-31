@@ -2,6 +2,7 @@
 <html>
 <head>
   <% include ../partials/header.ejs %>
+  <title>Lease generator</title>
 </head>
 
 <body>
@@ -33,6 +34,26 @@
       <p> <label for="caution_address">Adresse caution</label> : <input type="text" name="caution_address" id="caution_address" /> </p>
       <p> <label for="landlord_name">Prénom Nom propriétaire</label> : <input type="text" name="landlord_name" id="landlord_name" /> </p>
       <p> <label for="landlord_address">Adresse propriétaire</label> : <input type="text" name="landlord_address" id="landlord_address" /> </p>
+
+      <input type="submit" class="btn btn-lg btn-primary" value="Envoyer" />
+   </form>
+
+   <h3>Générateur de fiche locataire</h3>
+    <p>Selectionnez l'appartement et ceci génère la fiche locataire à remplir!</p>
+
+    <form method="post" action="/generate_information_document">
+      <select name="unit">
+          <option value="maison_neufgrange">Maison Hambach 2 rue de Neufgrange
+          <option value="appart_a_neufgrange">Appart Hambach 2a rue de Neufgrange
+          <option value="appart_b_neufgrange">Appart Hambach 2b rue de Neufgrange
+          <option value="appart_strasbourg">Appart Strasbourg
+          <option value="appart_oriels_nancy">Appart Oriels Nancy
+          <option value="appart_4RCN_nancy">Appart 4 rue Charles Nicole Nancy
+      </select>
+      <p> <label for="rent_amount">*Montant du loyer</label> : <input type="text" name="rent_amount" id="rent_amount" /> </p>
+      <p> <label for="landlord_name">Prénom Nom propriétaire</label> : <input type="text" name="landlord_name" id="landlord_name" /> </p>
+      <p> <label for="landlord_email">E-mail propriétaire</label> : <input type="text" name="landlord_email" id="landlord_email" /> </p>
+      <p> <label for="landlord_phone">Téléphone propriétaire</label> : <input type="text" name="landlord_phone" id="landlord_phone" /> </p>
 
       <input type="submit" class="btn btn-lg btn-primary" value="Envoyer" />
    </form>
