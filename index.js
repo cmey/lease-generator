@@ -20,7 +20,7 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .post('/generate',
+  .post('/generate_lease',
        form(
          field("unit").required(),
          field("start_date").required(),
