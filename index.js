@@ -1,7 +1,7 @@
 // sentry.io
 if (process.env.DYNO) { // only on heroku (not when run locally)
   var Raven = require('raven');
-  Raven.config('https://1dc065125aa542f4a77ecc56feb511b3@sentry.io/1231792').install();
+  Raven.config('https://4daec6af6d6149beaec62a5f83871cc4@sentry.io/1256402').install();
   console.log("Configured Sentry.");
 }
 const express = require('express')
