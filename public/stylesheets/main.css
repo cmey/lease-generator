@@ -30,3 +30,9 @@
       max-width: 100%; }
 
 .pagebreak { page-break-before: always; }
+
+.blank_row
+{
+    height: 10px !important; /* overwrites any other rules */
+    background-color: #FFFFFF;
+}
