@@ -263,10 +263,9 @@ Le présent bail a été établi sous seing privé le &emsp; &emsp; &emsp; &emsp
 <% if(caution_name) { %> 
 <h2 align="center">CAUTION SOLIDAIRE</h2>
 <br/>
-Je soussigné : <%= caution_name %>,
-<br/>demeurant : <%= caution_address %>,
+Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
 <br/>déclare me porter caution solidaire, sans bénéfice de discussion ni de division, du règlement des loyers, charges, taxes, impôts, réparations locatives, toutes indemnités et intérêts de retard et frais éventuels de procédures dus par le LOCATAIRE :
-<%= tenant_name %>
+<%= tenant_name %>, demeurant : <%= tenant_address %>
 <br/>en vertu du bail consenti pour les locaux qu'il occupera à compter du : <%= start_date %>
 <br/>du bien situé à :
 <% switch (unit) {
@@ -285,18 +284,18 @@ Je soussigné : <%= caution_name %>,
     } %>
 <% } %>
 <br/>bail que j'ai signé après en avoir pris connaissance et dont un exemplaire m'a été remis.
-<br/><br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, locataire, en cas de défaillance de sa part, à l'égard de, <%= landlord_name %>, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
-<br/><br/>Je confirme la connaissance que j'ai de la nature et de l'étendue de mes obligations en recopiant de ma main la mention ci-après : « Bon pour caution solidaire, ayant parfaitement connaissance de la nature et de l'étendue de l'obligation contractée, par moi-même qui m'engage à m'acquitter, en cas de défaillance du locataire, les sommes dus, comprenant un loyer qui s'élève à <%= rent_amount %> € par mois. »
+<br/><br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, LOCATAIRE, en cas de défaillance de sa part, à l'égard de, <%= landlord_name %>, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
+<br/><br/>Je confirme la connaissance que j'ai de la nature et de l'étendue de mes obligations en recopiant de ma main la mention ci-après : « Bon pour caution solidaire, ayant parfaitement connaissance de la nature et de l'étendue de l'obligation contractée, par moi-même qui m'engage à m'acquitter, en cas de défaillance du LOCATAIRE, les sommes dus, comprenant un loyer qui s'élève à <%= rent_amount %> € par mois. »
 <br/><br/>Mention manuscrite du soussigné :
 <div class="pagebreak"> </div>
 Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du 27/07), je recopie l'alinéa 1er de l'article précité reproduit ci-dessous :
-<br/>« Lorsque le cautionnement d'obligations résultant d'un contrat de location ne comporte aucune indication de durée ou lorsque la durée du cautionnement est stipulée indéterminée, la caution peut résilier unilatéralement. La résiliation prend effet au terme du contrat de location, qu'il s'agisse du contrat initial ou d'un contrat reconduit ou renouvelé au cours duquel le bailleur reçoit notification de la résiliation. »
+<br/>« Lorsque le cautionnement d'obligations résultant d'un contrat de location ne comporte aucune indication de durée ou lorsque la durée du cautionnement est stipulée indéterminée, la caution peut résilier unilatéralement. La résiliation prend effet au terme du contrat de location, qu'il s'agisse du contrat initial ou d'un contrat reconduit ou renouvelé au cours duquel le BAILLEUR reçoit notification de la résiliation. »
 <br/><br/>Mention manuscrite du soussigné :
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/>Pour l'exécution éventuelle de cet engagement, le tribunal du lieu de la location sera seul compétent.
 <br/><br/>Fait à &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;, le &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;.
-<br/><br/>Signature de la caution, précédé de la mention « Lu et approuvé, bon pour caution »
-<br/><br/><br/><br/>Signature du bailleur, précédé de la mention « Lu et approuvé »
+<br/><br/>Signature de la CAUTION, précédé de la mention « Lu et approuvé, bon pour caution »
+<br/><br/><br/><br/>Signature du BAILLEUR, précédé de la mention « Lu et approuvé »
 <br/><br/><br/><br/>
 
 
