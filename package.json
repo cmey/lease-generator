@@ -4,6 +4,7 @@
   "description": "Generate all the paperwork to be signed for a lease agreement",
   "main": "index.js",
   "dependencies": {
+    "@sentry/node": "^4.2.4",
     "ejs": "^2.5.8",
     "express": "^4.16.4",
     "express-form": "^0.12.6",
