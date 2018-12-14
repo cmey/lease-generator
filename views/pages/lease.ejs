@@ -37,8 +37,10 @@ Le présent contrat est conclu entre les soussignés:
     
 <p>LOCATAIRE(S)</p>
 <%= tenant_name %>, demeurant <%= tenant_address %>
-<br/><br/>
-<%= cotenant_name %>, demeurant <%= cotenant_address %>
+<%if (cotenant_name) { %>
+    <br/><br/>
+    <%= cotenant_name %>, demeurant <%= cotenant_address %>
+<% } %>
 
 <p>OBJET DU CONTRAT</p>
 Le BAILLEUR loue au LOCATAIRE, qui accepte, les locaux dont la désignation suit :
