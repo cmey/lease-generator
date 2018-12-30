@@ -280,13 +280,19 @@ Le cas échéant, le commandement de payer devra être notifié à la cauti
 <% } %>
 
 <p></p>
-Le présent bail a été établi sous seing privé le &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; en trois exemplaires originaux et remis à chacune des parties.
+Le présent bail a été établi sous seing privé le &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; en
+<% if(caution_name) { %> trois <% }else{ %> deux <% } %>
+exemplaires originaux et remis à chacune des parties.
 
 <p>SIGNATURES</p>
 
 <table width="100%">
-    <tr align="center"> <td>BAILLEUR</td> <td>LOCATAIRE(s)</td> <td>CAUTION</td> </tr>
-    <tr align="center"> <td>« lu et approuvé »</td> <td>« lu et approuvé »</td> <td>« lu et approuvé »</td> </tr>
+    <tr align="center"> <td>BAILLEUR</td> <td>LOCATAIRE(s)</td>
+        <% if(caution_name) { %> <td>CAUTION</td> <% } %>
+    </tr>
+    <tr align="center"> <td>« lu et approuvé »</td> <td>« lu et approuvé »</td>
+        <% if(caution_name) { %> <td>« lu et approuvé »</td> <% } %>
+    </tr>
 </table>
 
 <% if(caution_name) { %>
