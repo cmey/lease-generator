@@ -289,10 +289,9 @@ Le présent bail a été établi sous seing privé le &emsp; &emsp; &emsp; &emsp
     <tr align="center"> <td>« lu et approuvé »</td> <td>« lu et approuvé »</td> <td>« lu et approuvé »</td> </tr>
 </table>
 
-
+<% if(caution_name) { %>
 <div class="pagebreak"> </div>
 
-<% if(caution_name) { %> 
 <h2 align="center">CAUTION SOLIDAIRE</h2>
 <br/>
 Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
@@ -316,7 +315,6 @@ Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
     case 'maison_klein_hambach' : %>
         2 rue des Fleurs, Hambach 57910, <% break;
     } %>
-<% } %>
 <br/>bail que j'ai signé après en avoir pris connaissance et dont un exemplaire m'a été remis.
 <br/><br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, LOCATAIRE, en cas de défaillance de sa part, à l'égard de, <%= landlord_name %>, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
 <br/><br/>Je confirme la connaissance que j'ai de la nature et de l'étendue de mes obligations en recopiant de ma main la mention ci-après : « Bon pour caution solidaire, ayant parfaitement connaissance de la nature et de l'étendue de l'obligation contractée, par moi-même qui m'engage à m'acquitter, en cas de défaillance du LOCATAIRE, les sommes dus, comprenant un loyer qui s'élève à <%= rent_amount %> € par mois. »
@@ -332,6 +330,7 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
 <br/><br/><br/><br/>Signature du BAILLEUR, précédé de la mention « Lu et approuvé »
 <br/><br/><br/><br/>
 
+<% } %>
 
 <div class="pagebreak"> </div>
 
