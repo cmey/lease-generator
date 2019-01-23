@@ -1,7 +1,7 @@
 // sentry.io
 if (process.env.DYNO) { // only on heroku (not when run locally)
   const Sentry = require('@sentry/node');
-  Sentry.init({ dsn: 'https://1dc065125aa542f4a77ecc56feb511b3@sentry.io/1231792' });
+  Sentry.init({ dsn: 'https://60aaf6896825401d9eb19c383da04375@sentry.io/1378133' });
   console.log("Configured Sentry.");
 }
 const express = require('express')
