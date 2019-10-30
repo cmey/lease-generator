@@ -15,17 +15,17 @@
     <p>
     <% switch (unit) {
     case 'maison_neufgrange' : %>
-        Maison individuelle type F5 150 m2, 2 rue de Neufgrange, Hambach 57910<% break;
+        Maison individuelle type F5 150 m2, 2 rue de Neufgrange, 57910 Hambach<% break;
     case 'appart_a_neufgrange' : %>
-        Appartement type F5 139 m2, 2a rue de Neufgrange, Hambach 57910<% break;
+        Appartement type F5 139 m2, 2a rue de Neufgrange, 57910 Hambach<% break;
     case 'appart_b_neufgrange' : %>
-        Appartement type F5 139 m2, 2b rue de Neufgrange, Hambach 57910<% break;
+        Appartement type F5 139 m2, 2b rue de Neufgrange, 57910 Hambach<% break;
     case 'appart_strasbourg' : %>
-        Appartement F2 60m2, sis TODO<% break;
+        Appartement F2 53 m2 + parking sous-sol, 12 allée René Dumont, 67400 Illkirch-Graffenstaden<% break;
     case 'appart_oriels_nancy' : %>
-        F2 meublé 65m2, parking sous-sol, 5 allée du chanoine Drioton, 54000 Nancy<% break;
+        F2 meublé 65m2 + parking sous-sol, 5 allée du chanoine Drioton, 54000 Nancy<% break;
     case 'appart_4RCN_nancy' : %>
-        F2 meublé 47m2, dernier étage, parking sous-sol, 4 rue Charles Nicole, 54000 Nancy<% break;
+        F2 meublé 47m2 dernier étage + parking sous-sol, 4 rue Charles Nicole, 54000 Nancy<% break;
     } %>
     <br/>
     <%= rent_amount %> € / mois
@@ -33,7 +33,6 @@
     <p>Nom et Prénom :</p>
     <p>Téléphone :</p>
     <p>E-mail :</p>
-    <p>Date de naissance :</p>
     <p>Adresse actuelle :</p>
     <p>Profession :</p>
     <p>Employeur :</p>
@@ -44,10 +43,9 @@
     <p>Garant (nécessaire si salaire / 3 < loyer) :</p>
     <p>Durée de location envisagée :</p>
     <p>Merci de joindre à cette fiche les copies de :
-    <br/> - carte d'identité ;
+    <br/> - carte d'identité ou passeport ;
     <br/> - dernier avis d’impôt sur le revenu ;
-    <br/> - trois derniers bulletins de salaire ;
-    <br/> - plus ceux des garants si applicable.
+    <br/> - trois derniers bulletins de salaire, plus ceux des garants si applicable.
     </p>
     <p><%= landlord_name %> - <%= landlord_email %> - <%= landlord_phone %></p>
 
