@@ -3,7 +3,8 @@ Generate all the paperwork to be signed for a lease agreement.
 
 ## local development
 ```
-node index.js
+npm install  # install dependencies
+node index.js  # run a local server
 ```
 
 ## devops
