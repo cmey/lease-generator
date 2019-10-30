@@ -4,11 +4,11 @@
   "description": "Generate all the paperwork to be signed for a lease agreement",
   "main": "index.js",
   "dependencies": {
-    "@sentry/node": "^4.2.4",
+    "@sentry/node": "^5.7.1",
     "ejs": "^2.5.8",
     "express": "^4.16.4",
     "express-form": "^0.12.6",
-    "npm": "^5.8.0",
+    "npm": "^6.12.1",
     "raven": "^2.6.3",
     "written-number": "^0.8.1"
   },
