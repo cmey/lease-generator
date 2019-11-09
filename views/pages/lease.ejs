@@ -18,7 +18,9 @@
                 NON MEUBLÉ <% break;
             case 'appart_b_neufgrange' : %>
                 NON MEUBLÉ <% break;
-            case 'appart_strasbourg' : %>
+            case 'appart_belvedere_strasbourg' : %>
+                NON MEUBLÉ <% break;
+            case 'parking_belvedere_strasbourg' : %>
                 NON MEUBLÉ <% break;
             case 'appart_oriels_nancy' : %>
                 MEUBLÉ <% break;
@@ -53,8 +55,10 @@ case 'appart_a_neufgrange' : %>
     Un appartement type F5 de 139 m2 sis 2a rue de Neufgrange, Hambach 57910 <% break;
 case 'appart_b_neufgrange' : %>
     Un appartement type F5 de 139 m2 sis 2b rue de Neufgrange, Hambach 57910 <% break;
-case 'appart_strasbourg' : %>
-    Un appartement F2 de 53 m2 et parking sous-sol sis 12 allée René Dumont, Illkirch-Graffenstaden 67400 <% break;
+case 'appart_belvedere_strasbourg' : %>
+    Un appartement F2 de 53 m2 sis 12 allée René Dumont, Illkirch-Graffenstaden 67400 <% break;
+case 'parking_belvedere_strasbourg' : %>
+    Un parking de 15 m2 sis rue Le Corbusier, Illkirch-Graffenstaden 67400 <% break;
 case 'appart_oriels_nancy' : %>
     Un appartement meublé F2 de 65 m2 et parking sous-sol sis 5 allée du chanoine Drioton, Appartement B18, 54000 Nancy <% break;
 case 'appart_4RCN_nancy' : %>
@@ -73,7 +77,9 @@ case 'appart_a_neufgrange' : %>
     3 (trois) ans <% break;
 case 'appart_b_neufgrange' : %>
     3 (trois) ans <% break;
-case 'appart_strasbourg' : %>
+case 'appart_belvedere_strasbourg' : %>
+    3 (trois) ans <% break;
+case 'parking_belvedere_strasbourg' : %>
     3 (trois) ans <% break;
 case 'appart_oriels_nancy' : %>
     1 (un) an <% break;
@@ -90,7 +96,9 @@ à compter du <%= start_date %> (année-mois-jour), renouvelable ensuite par ta
         3 (trois) ans <% break;
     case 'appart_b_neufgrange' : %>
         3 (trois) ans <% break;
-    case 'appart_strasbourg' : %>
+    case 'appart_belvedere_strasbourg' : %>
+        3 (trois) ans <% break;
+    case 'parking_belvedere_strasbourg' : %>
         3 (trois) ans <% break;
     case 'appart_oriels_nancy' : %>
         1 (un) an <% break;
@@ -110,7 +118,9 @@ Le LOCATAIRE peut mettre fin au bail à tout moment en respectant un préavis de
         3 (trois) <% break;
     case 'appart_b_neufgrange' : %>
         3 (trois) <% break;
-    case 'appart_strasbourg' : %>
+    case 'appart_belvedere_strasbourg' : %>
+        3 (trois) <% break;
+    case 'parking_belvedere_strasbourg' : %>
         3 (trois) <% break;
     case 'appart_oriels_nancy' : %>
         1 (un) <% break;
@@ -130,7 +140,9 @@ Le BAILLEUR peut mettre fin au bail à son échéance et après avoir donné con
         6 (six) <% break;
     case 'appart_b_neufgrange' : %>
         6 (six) <% break;
-    case 'appart_strasbourg' : %>
+    case 'appart_belvedere_strasbourg' : %>
+        6 (six) <% break;
+    case 'parking_belvedere_strasbourg' : %>
         6 (six) <% break;
     case 'appart_oriels_nancy' : %>
         3 (trois) <% break;
@@ -155,8 +167,10 @@ Le nouveau loyer prendra automatiquement effet à la date de révision ; il s'
         Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois. <% break;
     case 'appart_b_neufgrange' : %>
         Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois. <% break;
-    case 'appart_strasbourg' : %>
+    case 'appart_belvedere_strasbourg' : %>
         Les charges sont forfaitairement fixées à 90 € (quatre-vingt-dix euros) par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
+    case 'parking_belvedere_strasbourg' : %>
+        Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'appart_oriels_nancy' : %>
         Les charges sont forfaitairement fixées à 79 € (soixante-dix-neuf euros) par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'appart_4RCN_nancy' : %>
@@ -209,7 +223,9 @@ Il pourra procéder à des enfoncements (chevilles) ou ancrages pour la fixati
         <% break;
     case 'appart_b_neufgrange' : %>
         <% break;
-    case 'appart_strasbourg' : %>
+    case 'appart_belvedere_strasbourg' : %>
+        <% break;
+    case 'parking_belvedere_strasbourg' : %>
         <% break;
     case 'appart_oriels_nancy' : %>
         <% break;
@@ -312,8 +328,10 @@ Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
         2a rue de Neufgrange, Hambach 57910, <% break;
     case 'appart_b_neufgrange' : %>
         2b rue de Neufgrange, Hambach 57910, <% break;
-    case 'appart_strasbourg' : %>
+    case 'appart_belvedere_strasbourg' : %>
         12 allée René Dumont, Illkirch-Graffenstaden 67400, <% break;
+    case 'parking_belvedere_strasbourg' : %>
+        rue Le Corbusier, Illkirch-Graffenstaden 67400, <% break;
     case 'appart_oriels_nancy' : %>
         5, allée du chanoine Drioton, Appartement B18, Nancy 54000, <% break;
     case 'appart_4RCN_nancy' : %>
@@ -349,7 +367,9 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
         TODO <% break;
     case 'appart_b_neufgrange' : %>
         TODO <% break;
-    case 'appart_strasbourg' : %>
+    case 'appart_belvedere_strasbourg' : %>
+        TODO <% break;
+    case 'parking_belvedere_strasbourg' : %>
         TODO <% break;
     case 'appart_oriels_nancy' : %>
         Les Oriels: 5, allée du chanoine Drioton, Appartement B18, 54000 Nancy
