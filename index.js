@@ -1,8 +1,9 @@
-// sentry.io
+// datadog integration
 if (process.env.DYNO) { // only on heroku (not when run locally)
-  const Sentry = require('@sentry/node');
-  Sentry.init({ dsn: 'https://1dc065125aa542f4a77ecc56feb511b3@sentry.io/1231792' });
-  console.log("Configured Sentry.");
+  var StatsD = require('hot-shots');
+  var dogstatsd = new StatsD();
+  // Increment a counter.
+  dogstatsd.increment('page.views')
 }
 const express = require('express')
 const path = require('path')
