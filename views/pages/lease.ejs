@@ -217,22 +217,11 @@ Il pourra également, en vue de la vente ou de la relocation de la chose loué
 <br/>Le LOCATAIRE répondra des dégradations et pertes qui pourraient survenir pendant la durée du contrat dans la chose louée, à moins qu'il ne prouve qu'elles ont eu lieu par cas de force majeure, par faute du BAILLEUR, ou par le fait d'un tiers qu'il n'a pas introduit dans le logement.
 Il pourra procéder à des enfoncements (chevilles) ou ancrages pour la fixation des meubles, miroirs, ou tableaux, dans les murs ou parois du logement loué, mais à charge de remettre les lieux en état lors de son départ, en procédant aux rebouchages et raccords de tapisserie (fibre) + peinture blanche si nécessaires. Il ne sera pas accepté de perçage dans tous les plafonds de la maison, ni au mur, ni au sol de la salle de bains. Il ne sera pas accepté de branchement d’appareil de chauffage supplémentaire sur les conduits de fumée existants.
 <% switch (unit) {
-    case 'maison_neufgrange' : %>
-        <% break;
-    case 'appart_a_neufgrange' : %>
-        <% break;
-    case 'appart_b_neufgrange' : %>
-        <% break;
-    case 'appart_belvedere_strasbourg' : %>
-        <% break;
-    case 'parking_belvedere_strasbourg' : %>
-        <% break;
-    case 'appart_oriels_nancy' : %>
-        <% break;
-    case 'appart_4RCN_nancy' : %>
-        <% break;
     case 'maison_klein_hambach' : %>
-        Ne pas mettre de sel de déneigement sur les escaliers, ni sur le macadam, ni sur le béton. <% break;
+        Ne pas mettre de sel de déneigement sur les escaliers, ni sur le macadam, ni sur le béton.
+        <% break;
+    default : %>
+        <% break;
 } %>
 <br/><br/>
 3. Assurance
@@ -356,20 +345,21 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
 
 <% } %>
 
-<div class="pagebreak"> </div>
-
-<h2 align="center">INVENTAIRE</h2>
-<br/>
 <% switch (unit) {
-    case 'maison_neufgrange' : %>
-        TODO <% break;
-    case 'appart_a_neufgrange' : %>
-        TODO <% break;
-    case 'appart_b_neufgrange' : %>
-        TODO <% break;
-    case 'appart_belvedere_strasbourg' : %>
-        TODO <% break;
-    case 'parking_belvedere_strasbourg' : %>
+    case 'appart_4RCN_nancy' :
+        // fall-through
+    case 'appart_oriels_nancy' : %>
+        <div class="pagebreak"> </div>
+
+        <h2 align="center">INVENTAIRE</h2>
+        <br/>
+        <% break;
+    default : %>
+        <% break;
+} %>
+
+<% switch (unit) {
+    case 'appart_4RCN_nancy' : %>
         TODO <% break;
     case 'appart_oriels_nancy' : %>
         Les Oriels: 5, allée du chanoine Drioton, Appartement B18, 54000 Nancy
@@ -481,11 +471,9 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
             </tr>
         </table>
         <% break;
-    case 'appart_4RCN_nancy' : %>
-        TODO <% break;
-    case 'maison_klein_hambach' : %>
-        TODO <% break;
-    } %>
+    default : %>
+        <% break;
+} %>
 
 </div>
 </div>
