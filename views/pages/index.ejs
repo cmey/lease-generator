@@ -8,14 +8,15 @@
 <body>
 
 <div class="jumbotron text-center">
-  <div class="container">
+  <div align="center" class="container">
     <h1>Lease generator</h1>
     <h3>Générateur de contrat de bail</h3>
     <!-- <p>Enter the lease details and this will generate the lease contract to be signed!</p> -->
     <p>Entrez les détails du contrat et ce site génère les documents à signer!</p>
 
     <form method="post" action="/generate_lease">
-      <select name="unit">
+      <p>
+        <select name="unit">
           <option value="maison_neufgrange">Maison Hambach 2 rue de Neufgrange</option>
           <option value="appart_a_neufgrange">Appart Hambach 2a rue de Neufgrange</option>
           <option value="appart_b_neufgrange">Appart Hambach 2b rue de Neufgrange</option>
@@ -24,8 +25,9 @@
           <option value="appart_oriels_nancy">Appart Oriels Nancy</option>
           <option value="appart_4RCN_nancy">Appart 4 rue Charles Nicole Nancy</option>
           <option value="maison_klein_hambach">Maison Klein Hambach</option>
-      </select>
-      <p> <label for="start_date">*Date de début</label> : <input type="date" name="start_date" id="start_date" value=<%- new Date().toLocaleDateString('en-CA') -%> required /> </p>
+        </select>
+      </p>
+      <p> <label for="start_date">*Date de début</label> : <input type="date" name="start_date" id="start_date" value=<%- new Date().toLocaleDateString('en-CA') %> required /> </p>
       <p> <label for="rent_amount">*Montant du loyer</label> : <input type="text" name="rent_amount" id="rent_amount" required /> </p>
 
       <p> <label for="tenant_name">*Prénom Nom locataire</label> : <input type="text" name="tenant_name" id="tenant_name" required /> </p>
@@ -44,7 +46,8 @@
     <p>Selectionnez l'appartement et ceci génère la fiche locataire à remplir!</p>
 
     <form method="post" action="/generate_information_document">
-      <select name="unit">
+      <p>
+        <select name="unit">
           <option value="maison_neufgrange">Maison Hambach 2 rue de Neufgrange</option>
           <option value="appart_a_neufgrange">Appart Hambach 2a rue de Neufgrange</option>
           <option value="appart_b_neufgrange">Appart Hambach 2b rue de Neufgrange</option>
@@ -52,7 +55,8 @@
           <option value="appart_oriels_nancy">Appart Oriels Nancy</option>
           <option value="appart_4RCN_nancy">Appart 4 rue Charles Nicole Nancy</option>
           <option value="maison_klein_hambach">Maison Klein Hambach</option>
-      </select>
+        </select>
+      </p>
       <p> <label for="rent_amount">*Montant du loyer</label> : <input type="text" name="rent_amount" id="rent_amount" required /> </p>
       <p> <label for="landlord_name">*Prénom Nom propriétaire</label> : <input type="text" name="landlord_name" id="landlord_name" value="Christophe MEYER" required /> </p>
       <p> <label for="landlord_email">*E-mail propriétaire</label> : <input type="text" name="landlord_email" id="landlord_email" value="christophe.meyer.pro@gmail.com" required /> </p>

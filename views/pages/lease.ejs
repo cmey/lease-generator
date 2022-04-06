@@ -32,22 +32,22 @@
     </h2>
 <p align="center">Loi n° 89-462 du 6 juillet 1989 (J.O. du 8/07/89)</p>
 
-Le présent contrat est conclu entre les soussignés:
+<p>Le présent contrat est conclu entre les soussignés:</p>
 
-<p>BAILLEUR</p>
-<%= landlord_name %>, demeurant <%= landlord_address %>
-    
-<p>LOCATAIRE(S)</p>
-<%= tenant_name %>, demeurant <%= tenant_address %>
+<h5>BAILLEUR</h5>
+<p><b><%= landlord_name %></b>, demeurant <b><%= landlord_address %></b></p>
+
+<h5>LOCATAIRE(S)</h5>
+<p><b><%= tenant_name %></b>, demeurant <b><%= tenant_address %></b></p>
 <%if (cotenant_name) { %>
-    <br/><br/>
-    <%= cotenant_name %>, demeurant <%= cotenant_address %>
+    <p><b> <%= cotenant_name %> </b>, demeurant <b> <%= cotenant_address %> </b></p>
 <% } %>
 
-<p>OBJET DU CONTRAT</p>
-Le BAILLEUR loue au LOCATAIRE, qui accepte, les locaux dont la désignation suit :
+<h5>OBJET DU CONTRAT</h5>
+<p>Le BAILLEUR loue au LOCATAIRE, qui accepte, les locaux dont la désignation suit :</p>
 
-<p>DÉSIGNATION</p>
+<h5>DÉSIGNATION</h5>
+<p><b>
 <% switch (unit) {
 case 'maison_neufgrange' : %>
     Une maison individuelle type F5 de 150 m2 sise 2 rue de Neufgrange, Hambach 57910 <% break;    
@@ -66,9 +66,12 @@ case 'appart_4RCN_nancy' : %>
 case 'maison_klein_hambach' : %>
     Une maison individuelle type F4 de 110 m2 sise 2 rue des Fleurs, 57910 Hambach <% break;
 } %>
+</b>
 constitue "le bien loué" ou "le logement" au sens du présent contrat. Le LOCATAIRE déclare bien connaître le bien loué pour l'avoir préalablement visité.
+</p>
 
-<p>DURÉE DU BAIL</p>
+<h5>DURÉE DU BAIL</h5>
+<p>
 Le bail est consenti pour 
 <% switch (unit) {
 case 'maison_neufgrange' : %>
@@ -88,7 +91,7 @@ case 'appart_4RCN_nancy' : %>
 case 'maison_klein_hambach' : %>
     3 (trois) ans <% break;
 } %>
-à compter du <%= start_date %> (année-mois-jour), renouvelable ensuite par tacite reconduction et par période de
+à compter du <b> <%= start_date %> </b> (année-mois-jour), renouvelable ensuite par tacite reconduction et par période de
 <% switch (unit) {
     case 'maison_neufgrange' : %>
         3 (trois) ans <% break;
@@ -108,8 +111,10 @@ à compter du <%= start_date %> (année-mois-jour), renouvelable ensuite par ta
         3 (trois) ans <% break;
     } %>
  faute de congé préalable. Toutefois, le loyer sera révisé dans les conditions ci-dessous définies sous le titre "LOYER".
+</p>
 
-<p>RÉSILIATION DU BAIL</p>
+<h5>RÉSILIATION DU BAIL</h5>
+<p>
 Le LOCATAIRE peut mettre fin au bail à tout moment en respectant un préavis de 
 <% switch (unit) {
     case 'maison_neufgrange' : %>
@@ -152,56 +157,70 @@ Le BAILLEUR peut mettre fin au bail à son échéance et après avoir donné con
         6 (six) <% break;
     } %>
 mois avant l'échéance du contrat de bail. Le délai de préavis commence à la date de réception de la lettre de congé par le LOCATAIRE.
+</p>
 
-<p>LOYER</p>
-La présente location est consentie et acceptée moyennant un loyer mensuel de <%= rent_amount %> € (<%= rent_amount_written %> euros), qui sera payable mensuellement et d'avance, et pour la première fois à la date de la remise des clefs au LOCATAIRE.
+<h5>LOYER</h5>
+<p>
+La présente location est consentie et acceptée moyennant un loyer mensuel de <b> <%= rent_amount %> € (<%= rent_amount_written %> euros)</b>, qui sera payable mensuellement et d'avance, et pour la première fois au plus tard à la date de la remise des clefs au LOCATAIRE.
 <br/><br/>
 Le loyer ci-dessus sera automatiquement révisé chaque année à la date anniversaire de la prise d'effet du présent bail, en fonction de la variation de l'indice de référence des loyers publié par l'INSEE.
 Le nouveau loyer prendra automatiquement effet à la date de révision ; il s'appliquera de manière rétroactive (ce qui donnera lieu à un rappel de loyers) dans le cas de retard de publication de l'indice.
+</p>
 
-<p>CHARGES</p>
+<h5>CHARGES</h5>
+<p>
 <% switch (unit) {
     case 'maison_neufgrange' : %>
-        Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois. <% break;
+        Les charges sont forfaitairement fixées à <b>0 € (zéro euros)</b> par mois. <% break;
     case 'appart_a_neufgrange' : %>
-        Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois. <% break;
+        Les charges sont forfaitairement fixées à <b>0 € (zéro euros)</b> par mois. <% break;
     case 'appart_b_neufgrange' : %>
-        Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois. <% break;
+        Les charges sont forfaitairement fixées à <b>0 € (zéro euros)</b> par mois. <% break;
     case 'appart_belvedere_strasbourg' : %>
-        Les charges sont forfaitairement fixées à 90 € (quatre-vingt-dix euros) par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
+        Les charges sont forfaitairement fixées à <b>90 € (quatre-vingt-dix euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'parking_belvedere_strasbourg' : %>
-        Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
+        Les charges sont forfaitairement fixées à <b>0 € (zéro euros)</b> par mois. <% break;
     case 'appart_oriels_nancy' : %>
-        Les charges sont forfaitairement fixées à 79 € (soixante-dix-neuf euros) par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
+        Les charges sont forfaitairement fixées à <b>79 € (soixante-dix-neuf euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'appart_4RCN_nancy' : %>
-        Les charges sont forfaitairement fixées à 90 € (quatre-vingt-dix euros) par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
+        Les charges sont forfaitairement fixées à <b>90 € (quatre-vingt-dix euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'maison_klein_hambach' : %>
-        Les charges sont forfaitairement fixées à 0 € (zéro euros) par mois. <% break;
+        Les charges sont forfaitairement fixées à <b>0 € (zéro euros)</b> par mois. <% break;
     } %>
+</p>
 
-<p>PAIEMENT DU LOYER ET DES CHARGES</p>
+<h5>PAIEMENT DU LOYER ET DES CHARGES</h5>
+<p>
 Tous paiements auront lieu par virement bancaire du LOCATAIRE au BAILLEUR à l'aide du RIB annexé.
 <br/><br/>
 Lorsque le LOCATAIRE en fera la demande, le BAILLEUR sera tenu de lui transmettre une quittance gratuitement. Dans tous les cas où le LOCATAIRE effectuera un paiement partiel, le BAILLEUR sera tenu de lui délivrer un reçu.
 La quittance portera le détail des sommes versées par le LOCATAIRE en distinguant le loyer et les charges.
+</p>
 
-<p>DÉPÔT DE GARANTIE</p>
-Le LOCATAIRE verse avant la remise des clés, la somme de <%= rent_amount %> € (<%= rent_amount_written %> euros) correspondant à un mois de loyer, à titre de dépôt de garantie de l'exécution de toutes les clauses du présent contrat.
+<h5>DÉPÔT DE GARANTIE</h5>
+<p>
+Le LOCATAIRE verse avant la remise des clés, la somme de <b><%= rent_amount %> € (<%= rent_amount_written %> euros)</b> correspondant à un mois de loyer, à titre de dépôt de garantie de l'exécution de toutes les clauses du présent contrat.
 Ce dépôt de garantie ne sera pas révisable ni productif d'intérêts.
 Il sera restitué dans un délai maximum de deux mois à compter du départ du LOCATAIRE, déduction faite, le cas échéant, des sommes restant dues au BAILLEUR et des sommes dont celui-ci pourrait être tenu aux lieu et place du LOCATAIRE.
 À défaut de restitution dans le délai prévu, le solde du dépôt de garantie restant dû au LOCATAIRE après arrêté des comptes produira intérêt au taux légal à son profit.
+</p>
 
-<p>ÉTAT DES LIEUX</p>
+<h5>ÉTAT DES LIEUX</h5>
+<p>
 Un état des lieux sera établi, contradictoirement entre les parties le jour de la remise des clés.
 Il résultera de ce document :
 que le logement loué répond aux divers critères de "décence" ;
 et qu'il est par ailleurs délivré en bon état d'usage et de réparations et que les équipements mentionnés au présent contrat sont en bon état de fonctionnement.
 Un autre état des lieux sera établi, contradictoirement ou par huissier de justice, en fin de bail, lors de la restitution des clefs.
+</p>
 
-<p>DESTINATION</p>
+<h5>DESTINATION</h5>
+<p>
 Le logement loué est destiné exclusivement à l'habitation principale du LOCATAIRE. Celui-ci ne pourra donc y exercer aucune activité professionnelle, même libérale ni en faire sa résidence secondaire.
+</p>
 
-<p>OBLIGATIONS DU LOCATAIRE</p>
+<h5>OBLIGATIONS DU LOCATAIRE</h5>
+<p>
 Le LOCATAIRE s'engage à exécuter toutes les obligations résultant de la présente convention et notamment celles suivantes :
 <br/><br/>
 1. Occupation, jouissance
@@ -230,33 +249,43 @@ Il devra justifier de ces assurances au BAILLEUR chaque année, à première 
 <br/><br/>
 4. Contributions et taxes
 <br/>Le LOCATAIRE s'oblige à acquitter à leurs échéances toutes ses contributions personnelles, taxe d'habitation, d'enlèvement des ordures ménagères, et autres, de façon que le BAILLEUR ne puisse pas être inquiété à ce sujet. Le LOCATAIRE devra avant de quitter les lieux, justifier au BAILLEUR qu'il est à jour de toutes les impositions et taxes dont il serait redevable, ainsi que de sa consommation d'électricité et de gaz.
+</p>
 
-<p>OBLIGATIONS DU PROPRIÉTAIRE</p>
+<h5>OBLIGATIONS DU PROPRIÉTAIRE</h5>
+<p>
 Les obligations du propriétaire sont actuellement énoncées par l'article 6 de la loi du 6 juillet 1989. Il est rappelé qu'en vertu de ce texte, le propriétaire est obligé :
 <br/>- d'assurer au LOCATAIRE la jouissance paisible du logement et de le garantir des vices ou défauts de nature à y faire obstacle ;
 <br/>- d'entretenir les locaux en état de servir à l'usage prévu par le contrat et d'y faire toutes les réparations autres que locatives nécessaires au maintien en état et à l'entretien normal des locaux loués ;
 <br/>- de ne pas s'opposer aux aménagements réalisés par le LOCATAIRE dès lors que ceux-ci ne constituent pas une transformation des lieux loués.
+</p>
 
-<p>TRAVAUX, RÉPARATIONS</p>
+<h5>TRAVAUX, RÉPARATIONS</h5>
+<p>
 Le LOCATAIRE aura à sa charge l'entretien courant de la chose louée et les menues réparations ainsi que l'ensemble des réparations locatives définies par le décret d'application de l'article 7, d, de la loi du 6 juillet 1989.
 Le LOCATAIRE s'oblige à aviser sans délai le BAILLEUR de tout dommage, ou dégradation, ou de tout sinistre survenant dans les lieux loués, et qui rendraient nécessaires des travaux ou réparations qui seraient à la charge du BAILLEUR. En cas de manquement à cet engagement, il sera responsable des préjudices de tous ordres causés par son silence ou son retard.
 <br/><br/>
 Le BAILLEUR sera tenu pour sa part, en application de l'article 6 de la loi précitée du 6 juillet 1989, d'entretenir la chose louée en état de servir à l'usage prévu par le contrat et d'y faire toutes les réparations, autres que locatives, nécessaires au maintien en état et à l'entretien normal de la chose louée. Le LOCATAIRE s'engage à le prévenir immédiatement de toute réparation qui serait à sa charge.
 <br/><br/>
 Le LOCATAIRE devra souffrir sans indemnité la réalisation par le BAILLEUR des travaux d'amélioration des parties communes ou des parties privatives de l'immeuble ainsi que les travaux nécessaires au maintien en état et à l'entretien normal de la chose louée, ainsi que les travaux d'amélioration de la performance énergétique à réaliser dans ces locaux. Mais, conformément aux dispositions des alinéas 2 et 3 de l'article 1724 du Code civil, si ces travaux durent plus de quarante jours, le loyer sera diminué à proportion du temps et de la partie de la chose louée dont le LOCATAIRE aura été privé. Si les réparations sont de telle nature qu'elles rendent inhabitable ce qui est nécessaire au logement du LOCATAIRE et de sa famille, celui-ci pourra faire résilier le bail.
+</p>
 
-<p>AMÉNAGEMENTS, TRANSFORMATIONS</p>
+<h5>AMÉNAGEMENTS, TRANSFORMATIONS</h5>
+<p>
 Le LOCATAIRE ne pourra réaliser que des aménagements qui ne constitueront pas une transformation de la chose louée.
 En fin de bail ces aménagements resteront acquis au BAILLEUR sans indemnité, à moins qu'il préfère que les lieux soient remis dans leur état antérieur, ce qui devra alors être effectué par le LOCATAIRE et à ses frais.
 Toute transformation nécessitera l'accord écrit du BAILLEUR. À défaut de cet accord, le BAILLEUR pourra exiger la remise en l'état des locaux ou des équipements, au départ du LOCATAIRE, ou conserver les transformations effectuées, sans que le LOCATAIRE puisse réclamer une indemnité pour les frais engagés.
 Le BAILLEUR pourra également exiger, aux frais du LOCATAIRE, la remise immédiate des lieux en l'état au cas où les transformations mettraient en péril le bon fonctionnement des équipements ou la sécurité du local.
 Le LOCATAIRE ne pourra faire aucun percement de mur, ou d'autre éléments du gros œuvre, ni aucune démolition sans avoir le consentement écrit préalable du BAILLEUR ou de son mandataire. Si le BAILLEUR le juge utile il pourra exiger, notamment pour des motifs d'esthétique ou de sécurité, que les travaux soient effectués sous la direction d'un architecte, aux frais du LOCATAIRE.
+</p>
 
-<p>CESSION, SOUS-LOCATION</p>
+<h5>CESSION, SOUS-LOCATION</h5>
+<p>
 Le présent bail étant conclu en considération de la personne du LOCATAIRE, les lieux ne pourront être occupés que par lui, sa famille, les personnes dont il a la charge et les personnes qu'il déciderait d'héberger temporairement, sans toutefois qu'il puisse en résulter une suroccupation du logement.
 Le LOCATAIRE ne peut non plus sous-louer ou céder les droits qu'il tient du présent bail sans l'accord écrit du BAILLEUR.
+</p>
 
-<p>CLAUSE PÉNALE</p>
+<h5>CLAUSE PÉNALE</h5>
+<p>
 1. Défaut de paiement à l'échéance.
 <br/>En application de l'article 1226 du Code civil, à défaut de paiement par le LOCATAIRE au terme convenu du loyer, de ses accessoires et de toute autre somme devenue exigible, les sommes impayées produiront de plein droit intérêt au taux légal au profit du BAILLEUR.
 L'intérêt courra à partir du jour de l'exigibilité de la somme demeurée impayée, sans qu'une mise en demeure préalable soit nécessaire, le LOCATAIRE se trouvant en demeure par le seul effet de la survenance du terme.
@@ -270,27 +299,36 @@ L'indemnité sera due à partir du jour où l'immeuble loué aurait dû ê
 <br/><br/>
 4. Portée de la clause
 <br/>La présente clause pénale ne déroge pas à la clause résolutoire prévue ci-dessous. Elle ne préjudicie pas à la possibilité pour le BAILLEUR de demander l'expulsion du LOCATAIRE ni aux dommages-intérêts que le BAILLEUR pourrait être amené à réclamer en raison de la carence du LOCATAIRE.
+</p>
 
-<p>CLAUSE DE SOLIDARITÉ</p>
+<h5>CLAUSE DE SOLIDARITÉ</h5>
+<p>
 Pour l'exécution de toutes les obligations résultant du présent contrat, il y aura solidarité et indivisibilité entre les parties ci-dessus désignées sous le terme «LOCATAIRE». Le colocataire qui donnera congé restera ainsi notamment garant et répondant solidaire de celui demeurant dans les lieux loués, aux fins de garantir la bonne exécution du présent contrat et de ses suites.
+</p>
 
-<p>CLAUSE RÉSOLUTOIRE</p>
+<h5>CLAUSE RÉSOLUTOIRE</h5>
+<p>
 En cas de non-paiement à son échéance de l'une des sommes dues par le LOCATAIRE au titre du loyer ou des charges récupérables et deux mois après un commandement de payer délivré par huissier et resté sans effet, ou de non-respect de l'obligation d'user paisiblement des locaux loués, résultant de troubles de voisinage constatés par une décision de justice passée en force de chose jugée, la présente location sera résiliée de plein droit et l'expulsion du LOCATAIRE poursuivie, s'il y a lieu, sur simple ordonnance de référé, conformément à l'article 24 de la loi du 6 juillet 1989.
 De même, en cas de défaut d'assurance du LOCATAIRE contre les risques dont il doit répondre en sa qualité de LOCATAIRE et un mois après un commandement de s'assurer resté sans effet, la présente location sera résiliée de plein droit, si bon semble au BAILLEUR, conformément à l'article 7 de la loi du 6 juillet 1989 précitée, et l'expulsion du LOCATAIRE poursuivie, s'il y a lieu, sur simple ordonnance de référé.
 Le cas échéant, le commandement de payer devra être notifié à la caution par acte d'huissier dans un délai de quinze jours à compter de la signification du commandement au LOCATAIRE.
+</p>
 
 <% if(caution_name) { %> 
-<p>ACTE DE CAUTIONNEMENT</p>
+<h5>ACTE DE CAUTIONNEMENT</h5>
+<p>
 <%= caution_name %>, demeurant <%= caution_address %>, après avoir pris connaissance du présent contrat, déclare se porter caution solidaire du LOCATAIRE pour l’exécution des obligations découlant du présent bail et de ses suites, dans les conditions de l’engagement établi par acte séparé.
 <% } %>
+</p>
 
-<p></p>
+<p>
 Le présent bail a été établi sous seing privé le &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; en
 <% if(caution_name) { %> trois <% }else{ %> deux <% } %>
 exemplaires originaux et remis à chacune des parties.
+</p>
 
-<p>SIGNATURES</p>
+<h5>SIGNATURES</h5>
 
+<p>
 <table width="100%">
     <tr align="center"> <td>BAILLEUR</td> <td>LOCATAIRE(s)</td>
         <% if(caution_name) { %> <td>CAUTION</td> <% } %>
@@ -299,11 +337,13 @@ exemplaires originaux et remis à chacune des parties.
         <% if(caution_name) { %> <td>« lu et approuvé »</td> <% } %>
     </tr>
 </table>
+</p>
 
 <% if(caution_name) { %>
 <div class="pagebreak"> </div>
 
 <h2 align="center">CAUTION SOLIDAIRE</h2>
+<p>
 <br/>
 Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
 <br/>déclare me porter caution solidaire, sans bénéfice de discussion ni de division, du règlement des loyers, charges, taxes, impôts, réparations locatives, toutes indemnités et intérêts de retard et frais éventuels de procédures dus par le LOCATAIRE :
@@ -342,6 +382,7 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
 <br/><br/>Signature de la CAUTION, précédé de la mention « Lu et approuvé, bon pour caution »
 <br/><br/><br/><br/>Signature du BAILLEUR, précédé de la mention « Lu et approuvé »
 <br/><br/><br/><br/>
+</p>
 
 <% } %>
 
@@ -352,7 +393,7 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
         <div class="pagebreak"> </div>
 
         <h2 align="center">INVENTAIRE</h2>
-        <br/>
+        <!-- <br/> -->
         <% break;
     default : %>
         <% break;
@@ -362,10 +403,10 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
     case 'appart_4RCN_nancy' : %>
         TODO <% break;
     case 'appart_oriels_nancy' : %>
-        Les Oriels: 5, allée du chanoine Drioton, Appartement B18, 54000 Nancy
-        <br/>
+        <p>Les Oriels: 5, allée du chanoine Drioton, Appartement B18, 54000 Nancy</p>
+        <!-- <br/> -->
         <table>
-            <tr class="blank_row"><td colspan="3"></td></tr>
+            <!-- <tr class="blank_row"><td colspan="3"></td></tr> -->
             <tr><td colspan="3"><b>CUISINE:</b></td></tr>
             <tr><td>8 Verres à Bourgogne</td>
                 <td>5 Flûtes</td>
