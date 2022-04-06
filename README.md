@@ -8,7 +8,7 @@ node index.js  # run a local server
 ```
 
 ## devops
-http://lease-generator-staging.herokuapp.com auto-deploys `master`.
+http://lease-generator-staging.herokuapp.com auto-deploys GitHub `master`.
 
 When happy with the result, promote to production http://lease-generator.herokuapp.com:
 
