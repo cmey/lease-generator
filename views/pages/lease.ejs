@@ -113,52 +113,6 @@ à compter du <b> <%= start_date %> </b> (année-mois-jour), renouvelable ensui
  faute de congé préalable. Toutefois, le loyer sera révisé dans les conditions ci-dessous définies sous le titre "LOYER".
 </p>
 
-<h5>RÉSILIATION DU BAIL</h5>
-<p>
-Le LOCATAIRE peut mettre fin au bail à tout moment en respectant un préavis de 
-<% switch (unit) {
-    case 'maison_neufgrange' : %>
-        3 (trois) <% break;
-    case 'appart_a_neufgrange' : %>
-        3 (trois) <% break;
-    case 'appart_b_neufgrange' : %>
-        3 (trois) <% break;
-    case 'appart_belvedere_strasbourg' : %>
-        3 (trois) <% break;
-    case 'parking_belvedere_strasbourg' : %>
-        3 (trois) <% break;
-    case 'appart_oriels_nancy' : %>
-        1 (un) <% break;
-    case 'appart_4RCN_nancy' : %>
-        1 (un) <% break;
-    case 'maison_klein_hambach' : %>
-        3 (trois) <% break;
-    } %>
-     mois, après avoir donné congé par lettre recommandée avec accusé de réception. Le délai de préavis commence à la date de réception de la lettre de congé par le BAILLEUR. En cas de congé notifié par le LOCATAIRE, celui-ci sera redevable du loyer et des charges concernant tout le délai de préavis sauf si le logement se trouve occupé avant la fin du délai de préavis par un autre LOCATAIRE en accord avec le BAILLEUR. À l'expiration du délai de préavis, le LOCATAIRE sera déchu de tout titre d'occupation de la chose louée. Le LOCATAIRE s'engage à remettre immédiatement à son départ les clefs des locaux loués au BAILLEUR et à lui indiquer sa nouvelle adresse. Toute remise des clés à une personne non habilitée par le BAILLEUR serait considérée comme inopérante.
-
-<br/><br/>
-Le BAILLEUR peut mettre fin au bail à son échéance et après avoir donné congé par lettre recommandée avec accusé de réception au moins 
-<% switch (unit) {
-    case 'maison_neufgrange' : %>
-        6 (six) <% break;
-    case 'appart_a_neufgrange' : %>
-        6 (six) <% break;
-    case 'appart_b_neufgrange' : %>
-        6 (six) <% break;
-    case 'appart_belvedere_strasbourg' : %>
-        6 (six) <% break;
-    case 'parking_belvedere_strasbourg' : %>
-        6 (six) <% break;
-    case 'appart_oriels_nancy' : %>
-        3 (trois) <% break;
-    case 'appart_4RCN_nancy' : %>
-        3 (trois) <% break;
-    case 'maison_klein_hambach' : %>
-        6 (six) <% break;
-    } %>
-mois avant l'échéance du contrat de bail. Le délai de préavis commence à la date de réception de la lettre de congé par le LOCATAIRE.
-</p>
-
 <h5>LOYER</h5>
 <p>
 La présente location est consentie et acceptée moyennant un loyer mensuel de <b> <%= rent_amount %> € (<%= rent_amount_written %> euros)</b>, qui sera payable mensuellement et d'avance, et pour la première fois au plus tard à la date de la remise des clefs au LOCATAIRE.
@@ -282,6 +236,63 @@ Le LOCATAIRE ne pourra faire aucun percement de mur, ou d'autre éléments du 
 <p>
 Le présent bail étant conclu en considération de la personne du LOCATAIRE, les lieux ne pourront être occupés que par lui, sa famille, les personnes dont il a la charge et les personnes qu'il déciderait d'héberger temporairement, sans toutefois qu'il puisse en résulter une suroccupation du logement.
 Le LOCATAIRE ne peut non plus sous-louer ou céder les droits qu'il tient du présent bail sans l'accord écrit du BAILLEUR.
+</p>
+
+<h5>RÉSILIATION DU BAIL</h5>
+<p>
+Le LOCATAIRE peut mettre fin au bail à tout moment en respectant un préavis de 
+<% switch (unit) {
+    case 'maison_neufgrange' : %>
+        3 (trois) <% break;
+    case 'appart_a_neufgrange' : %>
+        3 (trois) <% break;
+    case 'appart_b_neufgrange' : %>
+        3 (trois) <% break;
+    case 'appart_belvedere_strasbourg' : %>
+        3 (trois) <% break;
+    case 'parking_belvedere_strasbourg' : %>
+        3 (trois) <% break;
+    case 'appart_oriels_nancy' : %>
+        1 (un) <% break;
+    case 'appart_4RCN_nancy' : %>
+        1 (un) <% break;
+    case 'maison_klein_hambach' : %>
+        3 (trois) <% break;
+    } %>
+mois, après avoir donné congé par lettre recommandée avec accusé de réception.
+Le délai de préavis commence à la date de réception de la lettre de congé par le BAILLEUR.
+En cas de congé notifié par le LOCATAIRE, celui-ci sera redevable du loyer et des charges concernant tout le délai de préavis
+sauf si le logement se trouve occupé avant la fin du délai de préavis par un autre LOCATAIRE en accord avec le BAILLEUR.
+À l'expiration du délai de préavis, le LOCATAIRE sera déchu de tout titre d'occupation de la chose louée.
+Le LOCATAIRE s'engage à remettre immédiatement à son départ les clefs des locaux loués au BAILLEUR et à lui indiquer sa nouvelle adresse.
+Toute remise des clés à une personne non habilitée par le BAILLEUR serait considérée comme inopérante.
+</p>
+
+<p>
+Le BAILLEUR peut mettre fin au bail à son échéance et après avoir donné congé au moins 
+<% switch (unit) {
+    case 'maison_neufgrange' : %>
+        6 (six) <% break;
+    case 'appart_a_neufgrange' : %>
+        6 (six) <% break;
+    case 'appart_b_neufgrange' : %>
+        6 (six) <% break;
+    case 'appart_belvedere_strasbourg' : %>
+        6 (six) <% break;
+    case 'parking_belvedere_strasbourg' : %>
+        6 (six) <% break;
+    case 'appart_oriels_nancy' : %>
+        3 (trois) <% break;
+    case 'appart_4RCN_nancy' : %>
+        3 (trois) <% break;
+    case 'maison_klein_hambach' : %>
+        6 (six) <% break;
+    } %>
+mois avant l'échéance du contrat de bail. Le délai de préavis commence à la date de réception de la lettre de congé par le LOCATAIRE.
+</p>
+
+<p>
+Le contrat de location est résilié de plein droit par le décès du LOCATAIRE.
 </p>
 
 <h5>CLAUSE PÉNALE</h5>
