@@ -25,7 +25,7 @@
           <option value="appart_4RCN_nancy">Appart 4 rue Charles Nicole Nancy</option>
           <option value="maison_klein_hambach">Maison Klein Hambach</option>
       </select>
-      <p> <label for="start_date">*Date de début</label> : <input type="date" name="start_date" id="start_date" required /> </p>
+      <p> <label for="start_date">*Date de début</label> : <input type="date" name="start_date" id="start_date" value=<%- new Date().toLocaleDateString('en-CA') -%> required /> </p>
       <p> <label for="rent_amount">*Montant du loyer</label> : <input type="text" name="rent_amount" id="rent_amount" required /> </p>
 
       <p> <label for="tenant_name">*Prénom Nom locataire</label> : <input type="text" name="tenant_name" id="tenant_name" required /> </p>
@@ -34,8 +34,8 @@
       <p> <label for="cotenant_address">Adresse colocataire</label> : <input type="text" name="cotenant_address" id="cotenant_address" /> </p>
       <p> <label for="caution_name">Prénom Nom caution</label> : <input type="text" name="caution_name" id="caution_name" /> </p>
       <p> <label for="caution_address">Adresse caution</label> : <input type="text" name="caution_address" id="caution_address" /> </p>
-      <p> <label for="landlord_name">*Prénom Nom propriétaire</label> : <input type="text" name="landlord_name" id="landlord_name" required /> </p>
-      <p> <label for="landlord_address">*Adresse propriétaire</label> : <input type="text" name="landlord_address" id="landlord_address" required /> </p>
+      <p> <label for="landlord_name">*Prénom Nom propriétaire</label> : <input type="text" name="landlord_name" id="landlord_name" value="Christophe MEYER" required /> </p>
+      <p> <label for="landlord_address">*Adresse propriétaire</label> : <input type="text" name="landlord_address" id="landlord_address" value="23 rue Saint Hubert, 57910 Hambach" required /> </p>
 
       <input type="submit" class="btn btn-lg btn-primary" value="Envoyer" />
    </form>
@@ -54,9 +54,9 @@
           <option value="maison_klein_hambach">Maison Klein Hambach</option>
       </select>
       <p> <label for="rent_amount">*Montant du loyer</label> : <input type="text" name="rent_amount" id="rent_amount" required /> </p>
-      <p> <label for="landlord_name">*Prénom Nom propriétaire</label> : <input type="text" name="landlord_name" id="landlord_name" required /> </p>
-      <p> <label for="landlord_email">*E-mail propriétaire</label> : <input type="text" name="landlord_email" id="landlord_email" required /> </p>
-      <p> <label for="landlord_phone">*Téléphone propriétaire</label> : <input type="text" name="landlord_phone" id="landlord_phone" required /> </p>
+      <p> <label for="landlord_name">*Prénom Nom propriétaire</label> : <input type="text" name="landlord_name" id="landlord_name" value="Christophe MEYER" required /> </p>
+      <p> <label for="landlord_email">*E-mail propriétaire</label> : <input type="text" name="landlord_email" id="landlord_email" value="christophe.meyer.pro@gmail.com" required /> </p>
+      <p> <label for="landlord_phone">*Téléphone propriétaire</label> : <input type="text" name="landlord_phone" id="landlord_phone" value="0786778687" required /> </p>
 
       <input type="submit" class="btn btn-lg btn-primary" value="Envoyer" />
    </form>
