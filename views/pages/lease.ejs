@@ -28,8 +28,6 @@
                 MEUBLÉ <% break;
             case 'appart_4RCN_nancy' : %>
                 MEUBLÉ <% break;
-            case 'maison_klein_hambach' : %>
-                NON MEUBLÉ <% break;
             } %>
     </h2>
 <p align="center">Loi n° 89-462 du 6 juillet 1989 (J.O. du 8/07/89)</p>
@@ -65,8 +63,6 @@ case 'appart_oriels_nancy' : %>
     Un appartement meublé F2 de 65 m2 et parking sous-sol sis 5 allée du chanoine Drioton, Appartement B18, 54000 Nancy <% break;
 case 'appart_4RCN_nancy' : %>
     Un appartement meublé F2 de 47 m2, parking sous-sol, cellier et équipements désignés sur l’inventaire ci-joint, sis 4 rue Charles Nicole, Appartement 154, 54000 Nancy <% break;
-case 'maison_klein_hambach' : %>
-    Une maison individuelle type F4 de 110 m2 sise 2 rue des Fleurs, 57910 Hambach <% break;
 } %>
 </b>
 constitue "le bien loué" ou "le logement" au sens du présent contrat. Le LOCATAIRE déclare bien connaître le bien loué pour l'avoir préalablement visité.
@@ -90,8 +86,6 @@ case 'appart_oriels_nancy' : %>
     1 (un) an <% break;
 case 'appart_4RCN_nancy' : %>
     1 (un) an <% break;
-case 'maison_klein_hambach' : %>
-    3 (trois) ans <% break;
 } %>
 à compter du <b> <%= start_date %> </b> (année-mois-jour), renouvelable ensuite par tacite reconduction et par période de
 <% switch (unit) {
@@ -109,8 +103,6 @@ à compter du <b> <%= start_date %> </b> (année-mois-jour), renouvelable ensui
         1 (un) an <% break;
     case 'appart_4RCN_nancy' : %>
         1 (un) an <% break;
-    case 'maison_klein_hambach' : %>
-        3 (trois) ans <% break;
     } %>
  faute de congé préalable. Toutefois, le loyer sera révisé dans les conditions ci-dessous définies sous le titre "LOYER".
 </p>
@@ -140,8 +132,6 @@ Le nouveau loyer prendra automatiquement effet à la date de révision ; il s'
         Les charges sont forfaitairement fixées à <b>79 € (soixante-dix-neuf euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'appart_4RCN_nancy' : %>
         Les charges sont forfaitairement fixées à <b>90 € (quatre-vingt-dix euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
-    case 'maison_klein_hambach' : %>
-        Les charges sont forfaitairement fixées à <b>0 € (zéro euros)</b> par mois. <% break;
     } %>
 </p>
 
@@ -191,13 +181,6 @@ Il pourra également, en vue de la vente ou de la relocation de la chose loué
 2. Dégradations des lieux loués
 <br/>Le LOCATAIRE répondra des dégradations et pertes qui pourraient survenir pendant la durée du contrat dans la chose louée, à moins qu'il ne prouve qu'elles ont eu lieu par cas de force majeure, par faute du BAILLEUR, ou par le fait d'un tiers qu'il n'a pas introduit dans le logement.
 Il pourra procéder à des enfoncements (chevilles) ou ancrages pour la fixation des meubles, miroirs, ou tableaux, dans les murs ou parois du logement loué, mais à charge de remettre les lieux en état lors de son départ, en procédant aux rebouchages et raccords de tapisserie (fibre) + peinture blanche si nécessaires. Il ne sera pas accepté de perçage dans tous les plafonds de la maison, ni au mur, ni au sol de la salle de bains. Il ne sera pas accepté de branchement d’appareil de chauffage supplémentaire sur les conduits de fumée existants.
-<% switch (unit) {
-    case 'maison_klein_hambach' : %>
-        Ne pas mettre de sel de déneigement sur les escaliers, ni sur le macadam, ni sur le béton.
-        <% break;
-    default : %>
-        <% break;
-} %>
 <br/><br/>
 3. Assurance
 <br/>Le LOCATAIRE devra, pendant toute la durée du contrat, faire assurer la chose louée auprès d'une compagnie notoirement solvable et pour une somme suffisante contre les risques dont il doit répondre en sa qualité de LOCATAIRE, notamment, contre l'incendie, les dégâts des eaux, les risques locatifs et le recours des voisins. De la même manière, il devra également faire assurer son mobilier.
@@ -258,8 +241,6 @@ Le LOCATAIRE peut mettre fin au bail à tout moment en respectant un préavis de
         1 (un) <% break;
     case 'appart_4RCN_nancy' : %>
         1 (un) <% break;
-    case 'maison_klein_hambach' : %>
-        3 (trois) <% break;
     } %>
 mois, après avoir donné congé par lettre recommandée avec accusé de réception.
 Le délai de préavis commence à la date de réception de la lettre de congé par le BAILLEUR.
@@ -287,8 +268,6 @@ Le BAILLEUR peut mettre fin au bail à son échéance et après avoir donné con
         3 (trois) <% break;
     case 'appart_4RCN_nancy' : %>
         3 (trois) <% break;
-    case 'maison_klein_hambach' : %>
-        6 (six) <% break;
     } %>
 mois avant l'échéance du contrat de bail. Le délai de préavis commence à la date de réception de la lettre de congé par le LOCATAIRE.
 </p>
@@ -375,8 +354,6 @@ Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
         5, allée du chanoine Drioton, Appartement B18, Nancy 54000, <% break;
     case 'appart_4RCN_nancy' : %>
         4, rue Charles Nicole, Appartement 154, Nancy 54000, <% break;
-    case 'maison_klein_hambach' : %>
-        2 rue des Fleurs, Hambach 57910, <% break;
     } %>
 <br/>bail que j'ai signé après en avoir pris connaissance et dont un exemplaire m'a été remis.
 <br/><br/>Je serais donc tenu de satisfaire à toutes les obligations de <%= tenant_name %>, LOCATAIRE, en cas de défaillance de sa part, à l'égard de, <%= landlord_name %>, BAILLEUR. Le cautionnement est donné pour une somme indéterminée et pour une durée indéterminée. La fin du bail met automatiquement et par conséquence un terme à la caution.
