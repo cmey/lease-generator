@@ -43,8 +43,6 @@ express()
          if (!req.form.isValid) {
            console.log(req.form.errors);
          } else {
-           console.log("tenant_name:", req.form.tenant_name);
-           console.log("tenant_address:", req.form.tenant_address);
            req.form.rent_amount_written = writtenNumber(req.form.rent_amount);
            res.render('pages/lease.ejs', req.form)
          }
@@ -65,7 +63,6 @@ express()
          if (!req.form.isValid) {
            console.log(req.form.errors);
          } else {
-           console.log("unit:", req.form.tenant_name);
            req.form.rent_amount_written = writtenNumber(req.form.rent_amount);
            res.render('pages/information_document.ejs', req.form)
          }
