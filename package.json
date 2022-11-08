@@ -4,7 +4,7 @@
   "description": "Generate all the paperwork to be signed for a lease agreement",
   "main": "index.js",
   "dependencies": {
-    "ejs": "^2.5.8",
+    "ejs": "^3.1.7",
     "express": "^4.16.4",
     "express-form": "^0.12.6",
     "hot-shots": "^9.0.0",
