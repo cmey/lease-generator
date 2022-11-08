@@ -5,14 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "ejs": "^2.5.8",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "express-form": "^0.12.6",
     "hot-shots": "^9.0.0",
     "npm": "^6.12.1",
     "raven": "^2.6.3",
     "written-number": "^0.8.1"
   },
-  "devDependencies": {},
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
