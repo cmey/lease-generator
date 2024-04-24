@@ -24,6 +24,8 @@
                 NON MEUBLÉ <% break;
             case 'parking_belvedere_strasbourg' : %>
                 NON MEUBLÉ <% break;
+            case 'appart_et_parking_belvedere_strasbourg' : %>
+                NON MEUBLÉ <% break;
             case 'appart_oriels_nancy' : %>
                 MEUBLÉ <% break;
             case 'appart_4RCN_nancy' : %>
@@ -59,6 +61,8 @@ case 'appart_belvedere_strasbourg' : %>
     Un appartement F2 de 53 m2 sis 12 allée René Dumont, Illkirch-Graffenstaden 67400 <% break;
 case 'parking_belvedere_strasbourg' : %>
     Un parking de 15 m2 sis rue Le Corbusier, Illkirch-Graffenstaden 67400 <% break;
+case 'appart_et_parking_belvedere_strasbourg' : %>
+    Un appartement F2 de 53 m2 sis 12 allée René Dumont, Illkirch-Graffenstaden 67400 et un parking sis rue Le Corbusier, Illkirch-Graffenstaden 67400 <% break;
 case 'appart_oriels_nancy' : %>
     Un appartement meublé F2 de 65 m2 et parking sous-sol sis 5 allée du chanoine Drioton, Appartement B18, 54000 Nancy <% break;
 case 'appart_4RCN_nancy' : %>
@@ -82,6 +86,8 @@ case 'appart_belvedere_strasbourg' : %>
     3 (trois) ans <% break;
 case 'parking_belvedere_strasbourg' : %>
     3 (trois) ans <% break;
+case 'appart_et_parking_belvedere_strasbourg' : %>
+    3 (trois) ans <% break;
 case 'appart_oriels_nancy' : %>
     1 (un) an <% break;
 case 'appart_4RCN_nancy' : %>
@@ -98,6 +104,8 @@ à compter du <b> <%= start_date %> </b> (année-mois-jour), renouvelable ensui
     case 'appart_belvedere_strasbourg' : %>
         3 (trois) ans <% break;
     case 'parking_belvedere_strasbourg' : %>
+        3 (trois) ans <% break;
+    case 'appart_et_parking_belvedere_strasbourg' : %>
         3 (trois) ans <% break;
     case 'appart_oriels_nancy' : %>
         1 (un) an <% break;
@@ -128,6 +136,8 @@ Le nouveau loyer prendra automatiquement effet à la date de révision ; il s'
         Les charges sont forfaitairement fixées à <b>120 € (cent vingt euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'parking_belvedere_strasbourg' : %>
         Les charges sont forfaitairement fixées à <b>0 € (zéro euro)</b> par mois. <% break;
+    case 'appart_et_parking_belvedere_strasbourg' : %>
+        Les charges sont forfaitairement fixées à <b>120 € (cent vingt euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'appart_oriels_nancy' : %>
         Les charges sont forfaitairement fixées à <b>90 € (quatre-vingt-dix euros)</b> par mois, comprenant toutes les charges de copropriété (entretien du bâtiment, charges de syndic, ascenseur, ...) et la fourniture d’eau, à l’exclusion de la taxe ordures ménagères. Elles seront acquittées selon les mêmes modalités que le loyer. <% break;
     case 'appart_4RCN_nancy' : %>
@@ -237,9 +247,11 @@ Le LOCATAIRE peut mettre fin au bail à tout moment en respectant un préavis de
     case 'appart_b_neufgrange' : %>
         3 (trois) <% break;
     case 'appart_belvedere_strasbourg' : %>
-        3 (trois) <% break;
+        1 (un) <% break;
     case 'parking_belvedere_strasbourg' : %>
-        3 (trois) <% break;
+        1 (un) <% break;
+    case 'appart_et_parking_belvedere_strasbourg' : %>
+        1 (un) <% break;
     case 'appart_oriels_nancy' : %>
         1 (un) <% break;
     case 'appart_4RCN_nancy' : %>
@@ -266,6 +278,8 @@ Le BAILLEUR peut mettre fin au bail à son échéance et après avoir donné con
     case 'appart_belvedere_strasbourg' : %>
         6 (six) <% break;
     case 'parking_belvedere_strasbourg' : %>
+        6 (six) <% break;
+    case 'appart_et_parking_belvedere_strasbourg' : %>
         6 (six) <% break;
     case 'appart_oriels_nancy' : %>
         3 (trois) <% break;
@@ -353,6 +367,8 @@ Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
         12 allée René Dumont, Illkirch-Graffenstaden 67400, <% break;
     case 'parking_belvedere_strasbourg' : %>
         rue Le Corbusier, Illkirch-Graffenstaden 67400, <% break;
+    case 'appart_et_parking_belvedere_strasbourg' : %>
+        12 allée René Dumont, Illkirch-Graffenstaden 67400, <% break;
     case 'appart_oriels_nancy' : %>
         5, allée du chanoine Drioton, Appartement B18, Nancy 54000, <% break;
     case 'appart_4RCN_nancy' : %>
