@@ -395,6 +395,10 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
 <% switch (unit) {
     case 'appart_4RCN_nancy' :
         // fall-through
+    case 'appart_belvedere_strasbourg' :
+        // fall-through
+    case 'appart_et_parking_belvedere_strasbourg' :
+        // fall-through
     case 'appart_oriels_nancy' : %>
         <div class="pagebreak"> </div>
 
@@ -408,6 +412,16 @@ Conformément aux dispositions de l'article 23 de la loi du 21/07/1994 (J.O. du
 <% switch (unit) {
     case 'appart_4RCN_nancy' : %>
         TODO <% break;
+    case 'appart_belvedere_strasbourg' :
+        // fall-through
+    case 'appart_et_parking_belvedere_strasbourg' : %>
+        <p>Le Belvedere 2: 12 allée René Dumont, Illkirch-Graffenstaden 67400</p>
+        <table>
+            <tr><td colspan="3"><b>SALLE DE BAIN:</b></td></tr>
+            <tr><td>1 machine à laver</td>
+            </tr>
+        </table>
+        <% break;
     case 'appart_oriels_nancy' : %>
         <p>Les Oriels: 5, allée du chanoine Drioton, Appartement B18, 54000 Nancy</p>
         <!-- <br/> -->
