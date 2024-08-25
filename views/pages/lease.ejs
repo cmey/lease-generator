@@ -182,14 +182,24 @@ Le LOCATAIRE s'engage à exécuter toutes les obligations résultant de la pr
 1. Occupation, jouissance
 <br/>Le LOCATAIRE usera du logement loué suivant la destination ci-dessus. Il s'engage à ne pas modifier cette destination. Le LOCATAIRE s'oblige à jouir paisiblement des lieux loués et à veiller en particulier à éviter bruit, odeur, ou l'exercice de toute activité de nature à générer des inconvénients de voisinage, qu'ils soient de son fait ou de celui des occupants de son chef.
 Il s'interdit d'entreposer dans les lieux des matériels, matériaux ou substances susceptibles de présenter un inconvénient quelconque, un risque ou un danger même potentiel, pour le voisinage.
-Le LOCATAIRE devra entretenir <%if ('maison_neufgrange' == unit) { %>
-    les pavés autobloquants devant la maison et 
-<% } %>
-le jardin en parfait état, en procédant au désherbage des abords de la maison. La modification des plantations ne pourra se faire qu'avec l'accord écrit du BAILLEUR. Parquets et carrelage. - Le LOCATAIRE devra veiller à ce que les sols ne soient pas abîmés, en particulier par l'usage de talon dit "aiguilles". Si le salissement du parquet ou du carrelage, leur manque d'entretien ou leur dégradation rendait nécessaire en fin de bail une remise en état, son coût resterait à la charge du LOCATAIRE, dans la mesure où il ne pourrait pas être imputé à la vétusté mais à un usage anormal ou à un défaut d'entretien.
+<% switch (unit) {
+    case 'maison_neufgrange' : %>
+        Le LOCATAIRE devra entretenir les pavés autobloquants devant le logement et le jardin en parfait état, en procédant au désherbage des abords de la maison. La modification des plantations ne pourra se faire qu'avec l'accord écrit du BAILLEUR.
+        <% break;
+    case 'appart_a_neufgrange' : %>
+        Le LOCATAIRE devra entretenir les pavés autobloquants devant le logement et le jardin en parfait état, en procédant au désherbage des abords de la maison. La modification des plantations ne pourra se faire qu'avec l'accord écrit du BAILLEUR. Le caniveau sur la terrasse doit être nettoyé régulièrement et il faut toujours laisser le panier de protection.
+        <% break;
+    case 'appart_b_neufgrange' : %>
+        Le LOCATAIRE devra entretenir les pavés autobloquants devant le logement et le jardin en parfait état, en procédant au désherbage des abords de la maison. La modification des plantations ne pourra se faire qu'avec l'accord écrit du BAILLEUR. Le caniveau sur la terrasse doit être nettoyé régulièrement et il faut toujours laisser le panier de protection.
+        <% break;
+    default : %>
+        <% break;
+    } %>
+Le papier peint et les murs devront être maintenus propres et à la sortie remis dans leur couleur d'origine par le LOCATAIRE. Les interrupteurs ainsi que les prises et les plinthes ne doivent pas être mis en peinture. Il est interdit de fumer dans le logement.
+Parquets et carrelage: le LOCATAIRE devra veiller à ce que les sols ne soient pas abîmés, en particulier par l'usage de talon dit "aiguilles". Si le salissement du parquet ou du carrelage, leur manque d'entretien ou leur dégradation rendait nécessaire en fin de bail une remise en état, son coût resterait à la charge du LOCATAIRE, dans la mesure où il ne pourrait pas être imputé à la vétusté mais à un usage anormal ou à un défaut d'entretien.
 Le LOCATAIRE devra prendre toutes précautions nécessaires pour protéger du gel les canalisations d'eau ainsi que les compteurs. Il sera responsable des dégâts qui surviendraient du fait de sa négligence. Il devra de même prendre toutes les précautions nécessaires pour protéger le logement loué en cas de chutes de neige, d'orages d'inondations ou autres intempéries.
-Le LOCATAIRE pourra détenir un animal familier à la condition qu'il ne cause aucun dégât à l'immeuble ni aucun trouble de jouissance aux voisins. La détention de tout animal n'entrant pas dans la catégorie des animaux familiers habituellement considérés comme des animaux de compagnie est interdite, et en particulier celle d'un chien appartenant à la "première catégorie".
-Le BAILLEUR pourra visiter le bien loué ou la faire visiter par toute personne mandatée par lui, pour la surveillance et l'entretien de l'immeuble et de toutes les installations, toutes les fois que cela sera nécessaire, sous réserve d'en aviser préalablement le LOCATAIRE.
-Il pourra également, en vue de la vente ou de la relocation du bien louée, le faire visiter chaque jour ouvrable durant deux heures.
+Le LOCATAIRE pourra détenir un animal familier à la condition qu'il ne cause aucun dégât à l'immeuble ni aucun trouble de jouissance aux voisins. La détention de tout animal n'entrant pas dans la catégorie des animaux familiers habituellement considérés comme des animaux de compagnie est interdite, et en particulier la détention d'un chien appartenant à la "catégorie" 1 ou 2 (Staffordshire, Pit-bull, Rottweiller, Tosca, etc.) est interdite.
+Le BAILLEUR pourra visiter le bien loué ou la faire visiter par toute personne mandatée par lui, pour la surveillance et l'entretien de l'immeuble et de toutes les installations, toutes les fois que cela sera nécessaire, sous réserve d'en aviser préalablement le LOCATAIRE. Il pourra également, en vue de la vente ou de la relocation du bien louée, le faire visiter chaque jour ouvrable durant deux heures.
 <br/><br/>
 2. Dégradations des lieux loués
 <br/>Le LOCATAIRE répondra des dégradations et pertes qui pourraient survenir pendant la durée du contrat dans le bien loué, à moins qu'il ne prouve qu'elles ont eu lieu par cas de force majeure, par faute du BAILLEUR, ou par le fait d'un tiers qu'il n'a pas introduit dans le logement.
