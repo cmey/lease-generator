@@ -17,7 +17,8 @@ var writtenNumber = require('written-number');
 writtenNumber.defaults.lang = 'fr';
 
 express()
-  .use(bodyParser())
+  .use(bodyParser.json())
+  .use(bodyParser.urlencoded({ extended: true }))
   .use(express.static(path.join(__dirname, 'public')))
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
