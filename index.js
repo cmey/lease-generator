@@ -15,7 +15,7 @@ const { body, validationResult } = require('express-validator');
 var writtenNumber = require('written-number');
 writtenNumber.defaults.lang = 'fr';
 
-express()
+const app = express()
   .use(bodyParser.json())
   .use(bodyParser.urlencoded({ extended: true }))
   .use(express.static(path.join(__dirname, 'public')))
@@ -70,4 +70,9 @@ express()
       res.render('pages/information_document.ejs', formData);
     }
   )
-  .listen(PORT, () => console.log(`Listening on http://localhost:${ PORT }`))
+
+if (require.main === module) {
+  app.listen(PORT, () => console.log(`Listening on http://localhost:${ PORT }`))
+}
+
+module.exports = app
