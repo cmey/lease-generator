@@ -74,3 +74,28 @@ test('serves the landing page and generates an information document', async (t) 
   assert.match(informationDocument.body, /750 € \/ mois/)
   assert.match(informationDocument.body, /Alice Example - alice@example.com - 0123456789/)
 })
+
+test('includes the guarantor contact details in the lease', async (t) => {
+  const server = await startServer()
+  t.after(() => server.close())
+
+  const form = new URLSearchParams({
+    unit: 'appart_belvedere_strasbourg',
+    start_date: '2026-08-16',
+    rent_amount: '750',
+    tenant_name: 'Bob Example',
+    tenant_address: '1 rue Exemple, 67000 Strasbourg',
+    cotenant_name: '',
+    cotenant_address: '',
+    landlord_name: 'Alice Example',
+    landlord_address: '2 rue Exemple, 67000 Strasbourg',
+    caution_name: 'Charlie Example',
+    caution_address: '3 rue Exemple, 67000 Strasbourg',
+    caution_phone: '0612345678',
+    caution_email: 'charlie@example.com',
+  }).toString()
+
+  const lease = await request(server, 'POST', '/generate_lease', form)
+  assert.equal(lease.statusCode, 200)
+  assert.match(lease.body, /Charlie Example, demeurant 3 rue Exemple, 67000 Strasbourg, joignable au 0612345678 et par e-mail à charlie@example\.com/)
+})

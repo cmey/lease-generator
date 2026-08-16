@@ -332,7 +332,7 @@ Le cas échéant, le commandement de payer devra être notifié à la cauti
 <% if(caution_name) { %> 
 <h5>ACTE DE CAUTIONNEMENT</h5>
 <p>
-<%= caution_name %>, demeurant <%= caution_address %>, après avoir pris connaissance du présent contrat, déclare se porter caution solidaire du LOCATAIRE pour l’exécution des obligations découlant du présent bail et de ses suites, dans les conditions de l’engagement établi par acte séparé.
+<%= caution_name %>, demeurant <%= caution_address %>, joignable au <%= caution_phone %> et par e-mail à <%= caution_email %>, après avoir pris connaissance du présent contrat, déclare se porter caution solidaire du LOCATAIRE pour l’exécution des obligations découlant du présent bail et de ses suites, dans les conditions de l’engagement établi par acte séparé.
 <% } %>
 </p>
 
@@ -361,7 +361,7 @@ exemplaires originaux et remis à chacune des parties.
 <h2 align="center">CAUTION SOLIDAIRE</h2>
 <p>
 <br/>
-Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>,
+Je soussigné : <%= caution_name %>, demeurant : <%= caution_address %>, joignable au <%= caution_phone %> et par e-mail à <%= caution_email %>,
 <br/>déclare me porter caution solidaire, sans bénéfice de discussion ni de division, du règlement des loyers, charges, taxes, impôts, réparations locatives, toutes indemnités et intérêts de retard et frais éventuels de procédures dus par le LOCATAIRE :
 <%= tenant_name %>, demeurant : <%= tenant_address %>
 <br/>en vertu du bail consenti pour les locaux qu'il occupera à compter du : <%= start_date %>
